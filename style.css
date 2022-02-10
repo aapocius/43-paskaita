@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Stilizuoti Quiz projektą:
+Stilizuoti klausimus, pasirinkimus ir prog#3975a3resą.
+Pridėti animacijų setTimeout().
+Stilizuoti pabaigos rezultatų puslapį.
+Įkelkite į github ir paviešinkite.
+Įkelkite paviešintą nuorodą į Teams. */
+
+body {
+  background: grey;
+  user-select: none;
+}
+h3 {
+  text-align: center;
+}
+h4 {
+  margin-bottom: 8px;
+  font-style: italic;
+}
+span {
+  color: #13ff33b8;
+}
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #3974a2;
+  max-width: 400px;
+  padding: 50px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+h1 {
+  color: rgb(14, 13, 13);
+  border: 10px solid rgb(233, 207, 55);
+  border-radius: 8px;
+  background: rgb(233, 207, 55);
+}
+#quiz {
+}
+#progress {
+  text-align: right;
+  font-size: small;
+  margin-top: 10px;
+}
+
+button {
+  height: 60px;
+  width: 110px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  color: rgb(5, 5, 5);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 0.01px;
+  font-size: 13px;
+
+  font-weight: bold;
+
+  box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.5);
+  background: #daad86b5;
+}
+
+button:nth-of-type(1) {
+  transition: 0.5s;
+}
+button:nth-of-type(1):hover {
+  background: rgb(233, 207, 55);
+  box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.5);
+  transform: translate(-10%, -10%);
+}
+button:nth-of-type(1):active {
+  background: #daad86b5;
+  box-shadow: -5px -5px 6px 1px rgba(0, 0, 0, 0.5);
+  transform: translate(0);
+}
+button:nth-of-type(2) {
+  transition: 0.5s;
+}
+button:nth-of-type(2):hover {
+  background: rgb(233, 207, 55);
+  box-shadow: -5px 5px 6px 1px rgba(0, 0, 0, 0.5);
+  transform: translate(10%, -10%);
+}
+button:nth-of-type(2):active {
+  background: #daad86b5;
+  box-shadow: 5px -5px 6px 1px rgba(0, 0, 0, 0.5);
+  transform: translate(0);
+}
+button:nth-of-type(3) {
+  transition: 0.5s;
+}
+button:nth-of-type(3):hover {
+  background: rgb(233, 207, 55);
+  box-shadow: 5px -5px 6px 1px rgba(0, 0, 0, 0.5);
+  transform: translate(-10%, 10%);
+}
+button:nth-of-type(3):active {
+  background: #daad86b5;
+  box-shadow: -5px 5px 6px 1px rgba(0, 0, 0, 0.5);
+  transform: translate(0);
+}
+button:nth-of-type(4) {
+  transition: 0.5s;
+}
+button:nth-of-type(4):hover {
+  background: rgb(233, 207, 55);
+  box-shadow: -5px -5px 6px 1px rgba(0, 0, 0, 0.5);
+  transform: translate(10%, 10%);
+}
+button:nth-of-type(4):active {
+  background: #daad86b5;
+  box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.5);
+  transform: translate(0);
+}
+.buttons {
+  display: grid;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #8d8741 20%,
+    #fbeec1 29%,
+    #daad86 67%,
+    #659dbd 80%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+.hhh {
+  text-align: center;
+}
+#question {
+  text-align: center;
+  color: white;
+}
+p {
+  text-align: right;
+  font-size: smaller;
+  margin-top: 8px;
+  color: white;
+  font-style: italic;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
